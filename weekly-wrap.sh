@@ -1,3 +1,3 @@
 #!/bin/bash
 
-claude < prompt.md
+claude --print --permission-mode acceptEdits < prompt.md
