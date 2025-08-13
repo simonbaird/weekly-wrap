@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__jiraMcp__get_jira",
+      "mcp__jiraMcp__list_boards",
+      "mcp__jiraMcp__get_sprints_by_name",
+      "mcp__jiraMcp__search_issues"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "jiraMcp"
+  ]
+}
