@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "jiraMcp": {
+      "command": "podman",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "--env-file",
+        "${HOME}/.rh-jira-mcp.env",
+        "localhost/jira-mcp:latest"
+      ]
+    }
+  }
+}

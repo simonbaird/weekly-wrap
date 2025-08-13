@@ -4,7 +4,7 @@ Some tooling to generate human readable summaries of work done in Jira.
 
 ## Requirements
 
-Claude Code with a working Jira MCP.
+Claude Code and a local working and configured install of [redhat-ai-tools/jira-mcp](https://github.com/redhat-ai-tools/jira-mcp).
 
 ## Status
 
