@@ -42,4 +42,10 @@ and succinct.
 For each Jira mentioned, the Jira key should be clickable. Use a standard
 Markdown link like this: `[FOO-1234](https://issues.redhat.com/browse/FOO-1234)`.
 
+Rather than normal markdown headings for the categories, I'd like just bold
+text and a colon at the start of a paragraph like this:
+```
+**Category Heading**: The text for that category...
+```
+
 I want the report to be written to a file called "report.md".
