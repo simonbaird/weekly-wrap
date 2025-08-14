@@ -13,3 +13,6 @@ cat prompt.md |
 # We expect claude to create report.md
 REPORT_TS=report-$(date +'%Y%m%d-%H%M%S')
 mv report.md $REPORT_TS.md
+
+# For convenience let's make an html version
+python -m markdown < $REPORT_TS.md > $REPORT_TS.html
