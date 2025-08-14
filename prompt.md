@@ -6,8 +6,8 @@ manager.
 
 ## Gathering Jira details
 
-- The Jira project name is "EC". Use the `list_boards` mcp tool to find the
-  board id of the scrum board for this project.
+- Use the `list_boards` mcp tool to find the board id of the scrum board for
+  the "EC" project. Set `the project_key_or_id` param to the project name.
 - With the board id from the previous step, use the `get_sprints_by_name`
   mcp tool with the `state` param set to "active" to find the name and sprint
   id of the current sprint.
