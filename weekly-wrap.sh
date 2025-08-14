@@ -12,8 +12,10 @@ cat prompt.md |
   envsubst '$JIRA_PROJECT $WORD_COUNT' |
   claude ${PRINT_FLAG:-""} --permission-mode acceptEdits
 
+mkdir -p output
+REPORT_TS=output/report-$(date +'%Y%m%d-%H%M%S')
+
 # We expect claude to create report.md
-REPORT_TS=report-$(date +'%Y%m%d-%H%M%S')
 mv report.md $REPORT_TS.md
 
 # For convenience let's make an html version
