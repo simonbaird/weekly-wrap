@@ -18,3 +18,8 @@ mv report.md $REPORT_TS.md
 
 # For convenience let's make an html version
 python -m markdown < $REPORT_TS.md > $REPORT_TS.html
+
+if [ -z "${CI:-""}" ]; then
+  # Take a look
+  xdg-open $REPORT_TS.html
+fi
