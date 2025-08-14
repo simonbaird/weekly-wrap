@@ -7,7 +7,9 @@ if [ -n "${CI:-""}" ]; then
 fi
 
 cat prompt.md |
-  JIRA_PROJECT="${JIRA_PROJECT:-"EC"}" envsubst '$JIRA_PROJECT' |
+  JIRA_PROJECT="${JIRA_PROJECT:-"EC"}" \
+  WORD_COUNT=${WORD_COUNT:-"320"} \
+  envsubst '$JIRA_PROJECT $WORD_COUNT' |
   claude ${PRINT_FLAG:-""} --permission-mode acceptEdits
 
 # We expect claude to create report.md

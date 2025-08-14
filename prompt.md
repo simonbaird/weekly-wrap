@@ -34,6 +34,9 @@ specific Jiras inline in the sentences, but don't use bullet points.
 Note that you don't have to include every Jira. It's fine if less interesting
 Jiras are not mentioned at all.
 
+The total word count should be around $WORD_COUNT, so you have to keep it brief
+and succinct.
+
 ## Creating the output
 
 For each Jira mentioned, the Jira key should be clickable. Use a standard
