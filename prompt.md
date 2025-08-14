@@ -7,7 +7,8 @@ executive IT manager.
 ## Gathering Jira details
 
 - Use the `list_boards` mcp tool to find the board id of the scrum board for
-  the "EC" project. Set `the project_key_or_id` param to the project name.
+  the "$JIRA_PROJECT" project. Set `the project_key_or_id` param to the
+  project name.
 - With the board id from the previous step, use the `get_sprints_by_name` mcp
   tool with the `state` param set to "active" to find the name and sprint id
   of the current sprint.
@@ -40,4 +41,4 @@ directory. Let's use a `date +'%Y%m%d-%H%M%S'` style date format and call the
 file "$timestamp-wrap.md".
 
 For each Jira mentioned, the Jira key should be clickable. Use a standard
-Markdown link like this: `[EC-1234](https://issues.redhat.com/browse/EC-1234)`.
+Markdown link like this: `[FOO-1234](https://issues.redhat.com/browse/FOO-1234)`.

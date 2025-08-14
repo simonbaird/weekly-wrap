@@ -6,4 +6,6 @@ if [ -n "${CI:-""}" ]; then
   PRINT_FLAG="--print"
 fi
 
-claude ${PRINT_FLAG:-""} --permission-mode acceptEdits < prompt.md
+cat prompt.md |
+  JIRA_PROJECT="${JIRA_PROJECT:-"EC"}" envsubst '$JIRA_PROJECT' |
+  claude ${PRINT_FLAG:-""} --permission-mode acceptEdits
