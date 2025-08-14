@@ -36,9 +36,7 @@ Jiras are not mentioned at all.
 
 ## Creating the output
 
-I want the report to be written to a timestamped markdown file in the current
-directory. Let's use a `date +'%Y%m%d-%H%M%S'` style date format and call the
-file "$timestamp-wrap.md".
-
 For each Jira mentioned, the Jira key should be clickable. Use a standard
 Markdown link like this: `[FOO-1234](https://issues.redhat.com/browse/FOO-1234)`.
+
+I want the report to be written to a file called "report.md".
